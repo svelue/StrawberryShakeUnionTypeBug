@@ -1,0 +1,17 @@
+schema {
+  query: Query
+}
+
+type Query {
+  exampleQuery(): ExampleUnion!
+}
+
+type TypeA {
+  fieldA: Boolean!
+}
+
+type TypeB {
+  fieldB: Float!
+}
+
+union ExampleUnion = TypeA | TypeB

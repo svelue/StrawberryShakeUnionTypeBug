@@ -1,0 +1,12 @@
+{
+  "schema": "schema.graphql",
+  "documents": "**/*.graphql",
+  "extensions": {
+    "strawberryShake": {
+      "name": "ExampleClient",
+      "namespace": "ExampleClient",
+      "dependencyInjection": true,
+      "emitGeneratedCode": true
+    }
+  }
+}

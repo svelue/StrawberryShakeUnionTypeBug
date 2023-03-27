@@ -1,0 +1,14 @@
+﻿query ExampleQuery{
+    exampleQuery{
+        ... ExampleUnion
+    }
+}
+
+fragment ExampleUnion on ExampleUnion {
+    ... on TypeA {
+        fieldA
+    }
+    ... on TypeB {
+        fieldB
+    }
+}
