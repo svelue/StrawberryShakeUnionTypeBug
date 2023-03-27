@@ -4,6 +4,17 @@
     }
 }
 
+query ExampleQueryWithoutFragment{
+    exampleQuery{
+        ... on TypeA {
+            fieldA
+        }
+        ... on TypeB {
+            fieldB
+        }
+    }
+}
+
 fragment ExampleUnion on ExampleUnion {
     ... on TypeA {
         fieldA

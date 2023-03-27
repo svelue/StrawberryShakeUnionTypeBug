@@ -13,7 +13,9 @@ public class Test
     [Test]
     public void GeneratedTypesShouldNotBeEmpty()
     {
-        typeof(ExampleClient.ExampleQuery_ExampleQuery_TypeA).GetProperty("fieldA").Should().NotBeNull();
-        typeof(ExampleClient.ExampleQuery_ExampleQuery_TypeB).GetProperty("fieldB").Should().NotBeNull();
+        typeof(ExampleClient.ExampleQueryWithoutFragment_ExampleQuery_TypeA).GetProperty("FieldA").Should().NotBeNull();
+        typeof(ExampleClient.ExampleQueryWithoutFragment_ExampleQuery_TypeB).GetProperty("FieldB").Should().NotBeNull();
+        typeof(ExampleClient.ExampleQuery_ExampleQuery_TypeA).GetProperty("FieldA").Should().NotBeNull();
+        typeof(ExampleClient.ExampleQuery_ExampleQuery_TypeB).GetProperty("FieldB").Should().NotBeNull();
     }
 }
